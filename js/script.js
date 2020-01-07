@@ -13,6 +13,8 @@ Gioca.addEventListener('click',
     } else if (giocatoreDue.value == 0) {
       alert("devi scrivere il nome del giocatore Due");
     } else {
+
+
       d1 = Math.floor(Math.random() * 6) + 1;;
       document.getElementById("dado1").src = Dadi[d1];
 
@@ -28,6 +30,8 @@ Gioca.addEventListener('click',
         msg = "Lancio vinto da " + giocatore2.value.toUpperCase() + " per " + d2 + " a " + d1;
       }
       document.getElementById("msg").innerHTML = msg;
+      document.getElementById("dado1").classList.add ("rotate-scale-up-hor");
+      document.getElementById("dado2").classList.add ("rotate-scale-up-hor-2");
     }
 
   });
