@@ -1,4 +1,4 @@
-var Dadi = ["img/00.png", "img/01.png", "img/02.png", "img/03.png", "img/04.png", "img/05.png", "img/06.png" ]
+var Dadi = ["img/00.png", "img/01.png", "img/02.png", "img/03.png", "img/04.png", "img/05.png", "img/06.png"]
 
 var Gioca = document.getElementById('bottone-lancio');
 Gioca.addEventListener('click',
@@ -13,6 +13,19 @@ Gioca.addEventListener('click',
     } else if (giocatoreDue.value == 0) {
       alert("devi scrivere il nome del giocatore Due");
     } else {
+
+      // animazioni dadi
+      var element = document.getElementById("dado1");
+      element.classList.remove("rotate-scale-up-hor");
+      void element.offsetWidth;
+      element.classList.add("rotate-scale-up-hor");
+
+      var elementDue = document.getElementById("dado2");
+      elementDue.classList.remove("rotate-scale-up-hor-2");
+      void elementDue.offsetWidth; 
+      elementDue.classList.add("rotate-scale-up-hor-2");
+
+
       d1 = Math.floor(Math.random() * 6) + 1;;
       document.getElementById("dado1").src = Dadi[d1];
 
@@ -28,7 +41,6 @@ Gioca.addEventListener('click',
         msg = "Lancio vinto da " + giocatore2.value.toUpperCase() + " per " + d2 + " a " + d1;
       }
       document.getElementById("msg").innerHTML = msg;
-      document.getElementById("dado1").classList.add ("rotate-scale-up-hor");
-      document.getElementById("dado2").classList.add ("rotate-scale-up-hor-2");
+
     }
   });
