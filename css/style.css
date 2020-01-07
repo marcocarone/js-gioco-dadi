@@ -105,8 +105,8 @@ body {
 
 
 .rotate-scale-up-hor-2 {
-	-webkit-animation: rotate-scale-up-hor 1.25s ease-out alternate both;
-	        animation: rotate-scale-up-hor 1.25s ease-out alternate both;
+	-webkit-animation: rotate-scale-up-hor-2 1.25s ease-out alternate both;
+	        animation: rotate-scale-up-hor-2 1.25s ease-out alternate both;
 }
 
 @-webkit-keyframes rotate-scale-up-hor-2 {

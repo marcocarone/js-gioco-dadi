@@ -13,8 +13,6 @@ Gioca.addEventListener('click',
     } else if (giocatoreDue.value == 0) {
       alert("devi scrivere il nome del giocatore Due");
     } else {
-
-
       d1 = Math.floor(Math.random() * 6) + 1;;
       document.getElementById("dado1").src = Dadi[d1];
 
@@ -33,5 +31,4 @@ Gioca.addEventListener('click',
       document.getElementById("dado1").classList.add ("rotate-scale-up-hor");
       document.getElementById("dado2").classList.add ("rotate-scale-up-hor-2");
     }
-
   });
